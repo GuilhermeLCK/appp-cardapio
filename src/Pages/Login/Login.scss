@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.container-Login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+.container-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60%;
+  background-image: url("../../Images/hamb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+  z-index: 999;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 40%;
+  background-color: #ffffff;
+}
+
+.login {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 10px;
+  padding: 25px 0px 40px 0px;
+}
+
+.login-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-block: 5px;
+  color: #003cff;
+}
+
+form {
+  margin-top: 0.5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    font-family: var(--fonte-Montserrat);
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #003cff;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid #c0c0c08e;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #fff;
+    outline: none;
+    font-family: var(--fonte-Montserrat);
+  }
+
+  input:focus {
+    border: 2px solid #0494fc;
+  }
+  input::placeholder {
+    font-family: var(--fonte-Montserrat);
+    color: #999; /* Cor do texto do placeholder */
+    font-style: italic; /* Estilo do texto do placeholder, por exemplo, itálico */
+    font-weight: normal; /* Peso da fonte do texto do placeholder */
+  }
+
+  button {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #003cff;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: var(--fonte-Raleway);
+    font-weight: 600;
+
+    &:hover {
+      transition: 0.6s;
+      background-color: rgba(0, 60, 255, 0.89);
+    }
+  }
+}
+
+a {
+  margin: 1.5rem 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--fonte-Raleway);
+}
